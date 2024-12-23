@@ -10,60 +10,64 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
 
         body {
-            background: linear-gradient(120deg, #fdfbfb, #ebedee);
+            background: linear-gradient(135deg, #f5f7fa, #e8eef1);
             font-family: 'Inter', sans-serif;
-            color: #2c3e50;
+            color: #333333;
+            margin: 0;
+            padding: 0;
         }
 
         .header {
             text-align: center;
-            padding: 50px 0;
-            background: #eef2f3;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 12px;
-            margin-bottom: 40px;
+            padding: 60px 0;
+            background: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-bottom: 5px solid #6c5ce7;
         }
 
         .header h1 {
-            font-size: 3.5rem;
+            font-size: 3.8rem;
             font-weight: 700;
-            color: #2c3e50;
+            color: #6c5ce7;
+            margin-bottom: 10px;
         }
 
         .header p {
-            font-size: 1.2rem;
-            color: #5d6d7e;
+            font-size: 1.3rem;
+            color: #636e72;
         }
 
         .portfolio-section {
-            padding: 30px 0;
+            padding: 40px 0;
+            background-color: #fefefe;
         }
 
         .portfolio-item {
             border: none;
-            border-radius: 12px;
+            border-radius: 15px;
             background: #ffffff;
             margin-bottom: 30px;
-            padding: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .portfolio-item:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
 
         .portfolio-title {
-            color: #34495e;
-            font-size: 1.8rem;
+            color: #2d3436;
+            font-size: 2rem;
             font-weight: 700;
             margin-bottom: 15px;
         }
 
         .portfolio-description {
-            color: #7f8c8d;
+            color: #636e72;
             font-size: 1rem;
+            line-height: 1.6;
         }
 
         .add-portfolio {
@@ -72,10 +76,10 @@
         }
 
         .btn-primary {
-            background: #58b3ba;
+            background: #6c5ce7;
             border: none;
-            padding: 12px 25px;
-            font-size: 1rem;
+            padding: 12px 30px;
+            font-size: 1.1rem;
             font-weight: 600;
             color: #ffffff;
             border-radius: 30px;
@@ -83,15 +87,53 @@
         }
 
         .btn-primary:hover {
-            background: #419ba1;
-            transform: scale(1.05);
+            background: #4c4eeb;
+            transform: scale(1.1);
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: #6c5ce7;
+            font-size: 1.5rem;
+        }
+
+        .navbar-nav .nav-link {
+            color: #636e72;
+            font-size: 1.1rem;
+            margin-right: 20px;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #6c5ce7;
         }
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Elizabeth Ramirez</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="container header">
-        <h1 class="display-4">Elizabeth Ramirez</h1>
-        <p class="lead">Welcome to my UX portfolio. Dive into my creative journey and explore the projects I loved bringing to life!</p>
+        <h1>Elizabeth Ramirez</h1>
+        <p>An aspiring UX designer looking to break into the industry. Currently a UX design student, eager to bring impactful and user-centered designs to life!</p>
     </div>
 
     <div class="container portfolio-section">
