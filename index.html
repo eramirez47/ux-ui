@@ -8,70 +8,90 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f8f9fa;
-            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            font-family: 'Poppins', sans-serif;
+            color: #2c3e50;
         }
 
         .header {
             text-align: center;
             padding: 50px 0;
-            background-color: #e9ecef;
-            margin-bottom: 30px;
+            background: rgba(255, 255, 255, 0.85);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 40px;
         }
 
         .header h1 {
-            color: #495057;
+            font-size: 3rem;
+            color: #2c3e50;
         }
 
         .header p {
-            color: #6c757d;
+            font-size: 1.25rem;
+            color: #34495e;
         }
 
         .portfolio-section {
-            padding: 20px 0;
+            padding: 30px 0;
         }
 
         .portfolio-item {
-            border: 1px solid #dee2e6;
+            border: none;
             border-radius: 8px;
-            background-color: #ffffff;
-            margin-bottom: 20px;
-            padding: 15px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s;
+            background: #ffffff;
+            margin-bottom: 30px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .portfolio-item:hover {
-            transform: scale(1.02);
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
 
         .portfolio-title {
-            color: #495057;
-            font-size: 1.5rem;
-            margin-bottom: 10px;
+            color: #2c3e50;
+            font-size: 1.75rem;
+            margin-bottom: 15px;
         }
 
         .portfolio-description {
-            color: #6c757d;
+            color: #7f8c8d;
+            font-size: 1rem;
         }
 
         .add-portfolio {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 30px;
+        }
+
+        .btn-primary {
+            background: #3498db;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            border-radius: 25px;
+            transition: background 0.3s;
+        }
+
+        .btn-primary:hover {
+            background: #2980b9;
         }
     </style>
 </head>
 <body>
-    <div class="header">
+    <div class="container header">
         <h1 class="display-4">Elizabeth Ramirez</h1>
-        <p class="lead">Welcome to my UX portfolio. Explore my journey and projects below.</p>
+        <p class="lead">Welcome to my UX portfolio. Dive into my creative journey and explore the projects I loved bringing to life!</p>
     </div>
 
     <div class="container portfolio-section">
         <!-- Example portfolio item -->
         <div class="portfolio-item">
             <h2 class="portfolio-title">Project Title</h2>
-            <p class="portfolio-description">Brief description of the UX project. Highlight the goal, process, and outcome here.</p>
+            <p class="portfolio-description">A captivating brief description of this project. Explore the challenges faced, the innovative solutions designed, and the impactful results achieved.</p>
         </div>
 
         <!-- Add more portfolio items here -->
