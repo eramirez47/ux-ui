@@ -7,29 +7,32 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Work+Sans:wght@300;400;700&display=swap');
+
         body {
-            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
-            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #ece9e6, #ffffff);
+            font-family: 'Work Sans', sans-serif;
             color: #2c3e50;
         }
 
         .header {
             text-align: center;
             padding: 50px 0;
-            background: rgba(255, 255, 255, 0.85);
+            background: rgba(245, 245, 245, 0.95);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            border-radius: 12px;
             margin-bottom: 40px;
         }
 
         .header h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
+            font-family: 'Playfair Display', serif;
             color: #2c3e50;
         }
 
         .header p {
-            font-size: 1.25rem;
-            color: #34495e;
+            font-size: 1.2rem;
+            color: #5d6d7e;
         }
 
         .portfolio-section {
@@ -38,23 +41,25 @@
 
         .portfolio-item {
             border: none;
-            border-radius: 8px;
+            border-radius: 12px;
             background: #ffffff;
             margin-bottom: 30px;
             padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .portfolio-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transform: translateY(-8px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
         }
 
         .portfolio-title {
-            color: #2c3e50;
-            font-size: 1.75rem;
+            color: #34495e;
+            font-size: 1.8rem;
+            font-weight: 700;
             margin-bottom: 15px;
+            font-family: 'Playfair Display', serif;
         }
 
         .portfolio-description {
@@ -68,16 +73,19 @@
         }
 
         .btn-primary {
-            background: #3498db;
+            background: #5cacee;
             border: none;
-            padding: 10px 20px;
-            font-size: 1.1rem;
-            border-radius: 25px;
-            transition: background 0.3s;
+            padding: 12px 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #ffffff;
+            border-radius: 30px;
+            transition: background 0.3s, transform 0.2s;
         }
 
         .btn-primary:hover {
-            background: #2980b9;
+            background: #4682b4;
+            transform: scale(1.05);
         }
     </style>
 </head>
